@@ -11,21 +11,21 @@
   height: 500px;
   background-color: rgb(216, 216, 216);
 
-  border-radius: 15px; 
- margin-left: auto;
+  border-radius: 15px;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-  
+
   display: flex;
   flex-direction: column;
-  
+
   position: relative;
 }
 
 .portada {
   width: 100%;
   flex-grow: 0.5;
-  
+
   background-color: none;
 }
 .informacion {
@@ -38,21 +38,19 @@
   height: 100px;
   background: url(descarga.jpg);
   position: absolute;
-  
+
   top: 35%;
   left: 20px;
   transform: translateY(-50%);
-  
-  
+
   border-radius: 10px;
   z-index: 50;
 
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .imagen-perfil img {
   width: 100px;
   height: 100px;
-  
-} 
-
-
+}

@@ -22,7 +22,7 @@ h3 {
   color: #ccdeff;
   font-weight: 900;
 }
-form {
+nav form {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -30,25 +30,29 @@ form {
   flex-grow: 0.1;
   margin-right: 10px;
 }
-form div {
+nav form div {
   display: flex;
   flex-direction: column;
 }
-form label {
+nav form label {
   color: #ccdeff;
   font-size: 12px;
 }
-form input {
+nav form input {
   outline: none;
 }
-form input[type="button"] {
+nav form input[type="submit"] {
   background-color: #5c79ff;
   border: none;
   height: 22px;
   font-family: "Ruda", sans-serif;
   color: #ccdeff;
 }
-form input[type="button"]:hover {
+nav form input[type="submit"]:hover {
   cursor: pointer;
   background-color: #5c7affa9;
+}
+
+.oculto {
+  display: none;
 }

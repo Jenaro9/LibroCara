@@ -12,10 +12,22 @@
   <body>
     <nav>
       <h3>LibroCara</h3>
-      <form>
-        <div><label>Correo electronico</label><input type="text" id="user" /></div>
-        <div><label>Contraseña</label><input type="password" id="password" ></div>
-        <input  type="button" class="btn-login" onclick="login()" value="entrar"/>
+      <form class="user-form">
+        <div>
+          <label>Correo electronico</label
+          ><input type="text" id="user" class="input" />
+        </div>
+        <div>
+          <label>Contraseña</label
+          ><input type="password" id="password" class="input" />
+        </div>
+        <!-- <input
+          type="button"
+          class="btn-login"
+          onclick="login()"
+          value="entrar"
+        /> -->
+        <input class="btn-login" type="submit" value="entrar" />
       </form>
     </nav>
     <main>
@@ -23,16 +35,24 @@
         <div class="portada"></div>
         <div class="informacion">
           <p class="userName"></p>
-          <button class="btn-img-perfil">Subir Foto perfil</button>
-          <button class="btn-img-portada">Subir Foto portada</button>
+          <button
+            class="btn-img-perfil btn-upload-img"
+            data-imgContainer="imagen-perfil"
+          >
+            Subir Foto perfil
+          </button>
+          <button
+            class="btn-img-portada btn-upload-img"
+            data-imgContainer="imagen-portada"
+          >
+            Subir Foto portada
+          </button>
         </div>
-        <div class="imagen-perfil"></div>
+        <div class="imagen-perfil"><img src="./descarga.jpg" /></div>
         <div class="imagen-portada"></div>
       </div>
     </main>
   </body>
-  <script src="script-perfil.js"></script>
-  <script src="script-portada.js"></script>
+  <script src="script-imgs.js"></script>
   <script src="script-verifycate.js"></script>
-
 </html>
